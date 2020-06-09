@@ -1,0 +1,23 @@
+import axios from './config/axios.js'
+import build from './config/build.js'
+import buildModules from './config/buildModules.js'
+import css from './config/css.js'
+import head from './config/head.js'
+import loading from './config/loading.js'
+import mode from './config/mode.js'
+import modern from './config/modern.js'
+import modules from './config/modules.js'
+import plugins from './config/plugins.js'
+
+export default {
+  axios,
+  build,
+  buildModules,
+  css,
+  head,
+  loading,
+  mode,
+  modern,
+  modules,
+  plugins
+}
