@@ -2,6 +2,7 @@
 const netlify = {
   headers: {
     '/*': [
+      `Content-Security-Policy: default-src 'self' cdn.jsdelivr.net`,
       `Feature-Policy: accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'self'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none';  picture-in-picture 'none'; speaker 'none'; sync-xhr 'none'; usb 'none'; vr 'none';`,
       'Referrer-Policy: no-referrer',
       'X-Content-Type-Options: nosniff',
