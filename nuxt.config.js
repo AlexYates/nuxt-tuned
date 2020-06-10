@@ -8,6 +8,7 @@ import loading from './config/loading.js'
 import mode from './config/mode.js'
 import modern from './config/modern.js'
 import modules from './config/modules.js'
+import netlify from './config/netlify.js'
 import plugins from './config/plugins.js'
 import pwa from './config/pwa.js'
 
@@ -22,6 +23,7 @@ export default {
   mode,
   modern,
   modules,
+  netlify,
   plugins,
   pwa
 }
