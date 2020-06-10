@@ -2,6 +2,7 @@ import axios from './config/axios.js'
 import build from './config/build.js'
 import buildModules from './config/buildModules.js'
 import css from './config/css.js'
+import env from './config/env.js'
 import head from './config/head.js'
 import loading from './config/loading.js'
 import mode from './config/mode.js'
@@ -15,6 +16,7 @@ export default {
   build,
   buildModules,
   css,
+  env,
   head,
   loading,
   mode,

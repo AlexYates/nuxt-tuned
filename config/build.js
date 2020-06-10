@@ -1,5 +1,8 @@
 // https://nuxtjs.org/api/configuration-build/
 const build = {
+  // analyze: {
+  //   analyzerMode: 'static'
+  // },
   extend(config, { isDev, isClient }) {
     // https://nuxtjs.org/faq/extend-webpack#execute-eslint-on-every-webpack-build-in-dev-environment
     if (isDev) {
@@ -17,13 +20,14 @@ const build = {
     }
   },
   // https://github.com/nuxt/nuxt.js/issues/2201#issuecomment-616691273
-  optimization: {
-    splitChunks: {
-      automaticNameDelimiter: '.',
-      chunks: 'all',
-      maxSize: 51200, // ~< 50kib chunks
-    }
-  }
+  // optimization: {
+  //   splitChunks: {
+  //     automaticNameDelimiter: '.',
+  //     chunks: 'all',
+  //     maxSize: 51200, // ~< 0kib chunks
+  //     // maxSize: 102400, // ~< 100kib chunks
+  //   }
+  // }
 }
 
 export default build
