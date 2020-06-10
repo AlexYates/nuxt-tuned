@@ -24,8 +24,8 @@ const build = {
     splitChunks: {
       automaticNameDelimiter: '.',
       chunks: 'all',
-      // maxSize: 51200, // ~< 50kib chunks
-      maxSize: 102400, // ~< 100kib chunks
+      maxSize: 51200, // ~< 50kib chunks
+      // maxSize: 102400, // ~< 100kib chunks
     }
   }
 }
