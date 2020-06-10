@@ -1,8 +1,21 @@
 <template>
   <div>
     <nuxt />
+    <p class="text-xs">
+      Branch: <span class="font-semibold">{{ branch }}</span>
+    </p>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    branch() {
+      return process.env.BRANCH
+    }
+  }
+}
+</script>
 
 <style>
 html {
