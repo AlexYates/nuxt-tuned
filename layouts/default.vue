@@ -1,18 +1,8 @@
 <template>
-  <div :data-branch="branch">
+  <div>
     <nuxt />
   </div>
 </template>
-
-<script>
-export default {
-  computed: {
-    branch() {
-      return process.env.BRANCH
-    }
-  }
-}
-</script>
 
 <style>
 html {

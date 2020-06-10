@@ -9,6 +9,8 @@ const head = {
       name: 'description',
       content: process.env.npm_package_description || ''
     }
+    ,
+    { branch: process.env.BRANCH || 'dev' }
   ],
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
