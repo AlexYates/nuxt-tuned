@@ -2,8 +2,7 @@
   <div>
     <nuxt />
     <p class="text-xs">
-      Branch:
-      <span class="font-semibold">{{ branch }}</span>
+      Branch: <span class="font-semibold">{{ branch }}</span>
     </p>
   </div>
 </template>
