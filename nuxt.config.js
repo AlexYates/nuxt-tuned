@@ -8,6 +8,7 @@ import mode from './config/mode.js'
 import modern from './config/modern.js'
 import modules from './config/modules.js'
 import plugins from './config/plugins.js'
+import pwa from './config/pwa.js'
 
 export default {
   axios,
@@ -19,5 +20,6 @@ export default {
   mode,
   modern,
   modules,
-  plugins
+  plugins,
+  pwa
 }
