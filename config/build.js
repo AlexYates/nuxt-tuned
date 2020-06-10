@@ -20,14 +20,14 @@ const build = {
     }
   },
   // https://github.com/nuxt/nuxt.js/issues/2201#issuecomment-616691273
-  optimization: {
-    splitChunks: {
-      automaticNameDelimiter: '.',
-      chunks: 'all',
-      maxSize: 51200, // ~< 50kib chunks
-      // maxSize: 102400, // ~< 100kib chunks
-    }
-  }
+  // optimization: {
+  //   splitChunks: {
+  //     automaticNameDelimiter: '.',
+  //     chunks: 'all',
+  //     maxSize: 51200, // ~< 50kib chunks
+  //     // maxSize: 102400, // ~< 100kib chunks
+  //   }
+  // }
 }
 
 export default build

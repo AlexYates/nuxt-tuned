@@ -1,9 +1,6 @@
 <template>
-  <div>
+  <div :data-branch="branch">
     <nuxt />
-    <p class="text-xs">
-      Branch: <span class="font-semibold">{{ branch }}</span>
-    </p>
   </div>
 </template>
 
