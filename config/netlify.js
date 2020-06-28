@@ -19,7 +19,7 @@ const netlify = {
         `form-action 'self'`,
         `img-src 'self'`,
         `manifest-src 'self'`,
-        `script-src 'self' 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline'
+        `script-src 'self' 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline',
         `style-src 'self' 'unsafe-inline'`,
         `require-trusted-types-for 'script'`, // Experimental API
       ]),
