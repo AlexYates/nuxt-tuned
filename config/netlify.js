@@ -6,6 +6,8 @@
  */
 const headerCreate = (name, rules) => `${name}: ${rules.join('; ')}`
 
+// 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' https://cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox/`
+
 // https://github.com/aceforth/nuxt-netlify#headers
 const netlify = {
   headers: {
@@ -17,7 +19,7 @@ const netlify = {
         `form-action 'self'`,
         `img-src 'self'`,
         `manifest-src 'self'`,
-        `script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox/`,
+        `script-src 'self' 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline'
         `style-src 'self' 'unsafe-inline'`,
         `require-trusted-types-for 'script'`, // Experimental API
       ]),
