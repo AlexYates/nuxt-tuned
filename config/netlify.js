@@ -21,7 +21,7 @@ const netlify = {
         `manifest-src 'self'`,
         // https://web.dev/trusted-types/
         // `require-trusted-types-for 'script'`,
-        `script-src 'self' 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline'  https:`,
+        `script-src 'self' 'unsafe-eval' 'unsafe-inline' https:`, // 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' 'strict-dynamic'
         `style-src 'self' 'unsafe-inline'`,
         `script-src-elem 'self' https:`,
       ]),
