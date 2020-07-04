@@ -21,6 +21,7 @@ const netlify = {
         `manifest-src 'self'`,
         `script-src 'self' 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline'  https:`,
         `style-src 'self' 'unsafe-inline'`,
+        `script-src-elem 'self' https:`,
         // https://web.dev/trusted-types/
         // `require-trusted-types-for 'script'`,
       ]),
