@@ -32,13 +32,22 @@ const netlify = {
         `fullscreen 'self'`,
         `geolocation 'none'`,
         `gyroscope 'none'`,
+        // https://github.com/w3c/webappsec-feature-policy/blob/master/policies/loading-image-default-eager.md#using-the-feature
+        `loading-image-default-eager 'none'`,
         `magnetometer 'none'`,
         `microphone 'none'`,
         `midi 'none'`,
+        // https://github.com/w3c/webappsec-feature-policy/blob/master/policies/optimized-images.md#oversized-images
+        `oversized-images *(2)`,
         `payment 'none'`,
         `picture-in-picture 'none'`,
         `speaker 'none'`,
         `sync-xhr 'none'`,
+        // https://github.com/w3c/webappsec-feature-policy/blob/master/policies/optimized-images.md#unoptimized-lossy-images-policy-and-unoptimized-lossless-images-policy
+        `unoptimized-lossy-images *(0.625)`,
+        `unoptimized-lossless-images 'none'`,
+        // https://github.com/w3c/webappsec-feature-policy/blob/master/policies/unsized-media.md
+        `unsized-media 'none'`,
         `usb 'none'`,
         `vr 'none'`,
       ]),
