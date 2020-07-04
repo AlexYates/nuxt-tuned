@@ -23,7 +23,7 @@ const netlify = {
         // https://web.dev/trusted-types/
         // `require-trusted-types-for 'script'`,
         `script-src 'self' https:`, // 'unsafe-eval'
-        `script-src-elem 'self' 'unsafe-inline' 'sha256-UewfLy4eX0EMMTQVtXo4Umzg0OVplq+mZJNrHWiCGGs= https:`,
+        `script-src-elem 'self' 'unsafe-inline' 'sha256-UewfLy4eX0EMMTQVtXo4Umzg0OVplq+mZJNrHWiCGGs=' https:`,
         `style-src 'self' 'unsafe-inline'`,
       ]),
       // headerCreate('Content-Security-Policy-Report-Only', [
