@@ -6,7 +6,8 @@
  */
 const headerCreate = (name, rules) => `${name}: ${rules.join('; ')}`
 
-// 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' https://cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox/`
+// 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' === https://cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox/
+// 'sha256-UewfLy4eX0EMMTQVtXo4Umzg0OVplq+mZJNrHWiCGGs=' === inline-script
 
 // https://github.com/aceforth/nuxt-netlify#headers
 const netlify = {
@@ -21,14 +22,14 @@ const netlify = {
         `manifest-src 'self'`,
         // https://web.dev/trusted-types/
         // `require-trusted-types-for 'script'`,
-        `script-src 'self' 'unsafe-eval' 'unsafe-inline' https:`, // 'sha256-sH4yPnnlZ9QdUT1I/FPmXXy51PSFhE35uqKJFXMik/4=' 'strict-dynamic'
+        `script-src 'self' 'unsafe-inline' 'sha256-UewfLy4eX0EMMTQVtXo4Umzg0OVplq+mZJNrHWiCGGs=' https:`, // 'unsafe-eval'
         `style-src 'self' 'unsafe-inline'`,
         `script-src-elem 'self' https:`,
       ]),
-      headerCreate('Content-Security-Policy-Report-Only', [
-        // https://web.dev/trusted-types/
-        `require-trusted-types-for 'script'`
-      ]),
+      // headerCreate('Content-Security-Policy-Report-Only', [
+      //   // https://web.dev/trusted-types/
+      //   `require-trusted-types-for 'script'`
+      // ]),
       headerCreate('Feature-Policy', [
         `accelerometer 'none'`,
         `ambient-light-sensor 'none'`,
