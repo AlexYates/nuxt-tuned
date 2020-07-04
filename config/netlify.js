@@ -55,6 +55,8 @@ const netlify = {
         // https://github.com/w3c/webappsec-feature-policy/blob/master/policies/unsized-media.md
         `unsized-media 'none'`,
         `usb 'none'`,
+        // https://github.com/w3c/webappsec-feature-policy/blob/master/policies/vertical_scroll.md#proposed-solution
+        `vertical-scroll 'self'`,
         `vr 'none'`,
       ]),
       headerCreate('Referrer-Policy', ['no-referrer']),
