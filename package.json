@@ -15,7 +15,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.13.2"
+    "nuxt": "^2.13.3"
   },
   "devDependencies": {
     "@aceforth/nuxt-netlify": "^1.0.0",
