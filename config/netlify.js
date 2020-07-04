@@ -22,13 +22,13 @@ const netlify = {
         `manifest-src 'self'`,
         // https://web.dev/trusted-types/
         // `require-trusted-types-for 'script'`,
-        `script-src 'self' 'unsafe-inline' 'sha256-UewfLy4eX0EMMTQVtXo4Umzg0OVplq+mZJNrHWiCGGs=' https:`, // 'unsafe-eval'
+        `script-src 'self' https:`, // 'unsafe-eval'
+        `script-src-elem 'self' 'unsafe-inline' 'sha256-UewfLy4eX0EMMTQVtXo4Umzg0OVplq+mZJNrHWiCGGs= https:`,
         `style-src 'self' 'unsafe-inline'`,
-        `script-src-elem 'self' https:`,
       ]),
       // headerCreate('Content-Security-Policy-Report-Only', [
-      //   // https://web.dev/trusted-types/
-      //   `require-trusted-types-for 'script'`
+      // // https://web.dev/trusted-types/
+      // `require-trusted-types-for 'script'`
       // ]),
       headerCreate('Feature-Policy', [
         `accelerometer 'none'`,
